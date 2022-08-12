@@ -10,7 +10,13 @@ html {
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
+  /* font-family: "PF Agora Sans Pro Medium", sans-serif; */
+  /* font-family: "PF Agora Sans Pro", sans-serif; */
+  /* font-family: "PF Agora Sans Pro XThin", sans-serif; */
+  /* font-family: "PF Agora Sans Pro Thin", sans-serif;  */
+  font-family: "PF Agora Sans Pro Light", sans-serif;
+  /* font-family: "PF Agora Sans Pro Black", sans-serif; */
+  /* font-family: "PF Agora Sans Pro UltraBlack", sans-serif; */
 }
 
 a {
@@ -19,10 +25,481 @@ a {
 
 img {
   display: block;
-  width: 100%;
+  width: auto;
+  object-fit: cover;
 }
 
 .container {
-  max-width: 120rem;
+  max-width: 108rem;
   margin: 0 auto;
 }
+
+.heading {
+  font-size: 5rem;
+  font-family: "PF Agora Sans Pro XThin", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  text-align: center;
+}
+
+.heading span {
+  font-size: 6rem;
+}
+
+.title {
+  font-size: 2.4rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.btn {
+  display: inline-block;
+  font-size: 2.6rem;
+  font-family: "PF Agora Sans Pro Thin", sans-serif;
+  padding: 2rem 3.5rem;
+  border: 1px solid;
+  border-radius: 1rem;
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+.description {
+  font-size: 1.6rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* -------- Start Header -------- */
+.header {
+}
+.header-burger {
+  width: 2rem;
+  cursor: pointer;
+  margin-right: 5.5rem;
+}
+
+.header-burger__line {
+  display: block;
+  margin: 6px 0;
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  transition: all 0.2s linear;
+}
+
+.header-inner {
+  max-width: 120rem;
+  padding: 3rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-left,
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.header-back {
+  margin-left: 5.5rem;
+  cursor: pointer;
+}
+
+.header-phone {
+  border-radius: 1rem;
+  padding: 1rem 3.5rem;
+  background-color: #ffd200;
+  cursor: pointer;
+}
+
+.header-phone__number {
+  font-size: 1.6rem;
+}
+
+.header-phone__underlined {
+  height: 1px;
+  width: 100%;
+  border-bottom: 1px dashed;
+}
+
+/* -------- End Header -------- */
+
+/* -------- Start Banner -------- */
+
+.banner {
+  background-image: url("./images/banner-bg.png");
+  height: 55rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.banner-inner {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.banner-inner__heading {
+  margin-top: 5.5rem;
+  margin-bottom: 2.8rem;
+}
+
+.banner-inner__title {
+  margin-bottom: 8rem;
+}
+
+/* -------- End Banner -------- */
+
+/* -------- Start Transaction -------- */
+.transaction {
+  margin-top: 6rem;
+  margin-bottom: 10rem;
+}
+
+.transaction-inner,
+.transaction-item__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.transaction-item__text {
+  text-align: start;
+}
+
+.transaction-item__img {
+  width: 14rem;
+  height: 14rem;
+  border: 5px solid #ffd200;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2.5rem;
+}
+
+/* -------- End Transaction -------- */
+
+/* -------- Start Advantage -------- */
+
+.advantage {
+  background-color: #f3f0e7;
+  padding-top: 5.5rem;
+}
+
+.advantage-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.advantage-list__item--img {
+  width: 26.7rem;
+  height: 26.7rem;
+  border-radius: 50%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.advantage-list {
+  margin-top: 6.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.advantage-list__item {
+  margin-right: 11rem;
+  width: 26.7rem;
+}
+
+.advantage-list__item:last-child {
+  margin-right: 0;
+}
+
+.advantage-list__item--title {
+  margin: 3rem 0;
+}
+
+.advantage-btn {
+  background-color: #e11a27;
+  color: #fff;
+  margin-top: 10rem;
+  margin-bottom: 8rem;
+}
+
+/* -------- End Advantage -------- */
+
+/* -------- Start Solutions -------- */
+.solutions {
+  margin-top: 7rem;
+  margin-bottom: 11rem;
+}
+
+.solutions-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 6rem;
+}
+
+.solutions-list__item {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffd200;
+  width: 30%;
+  margin-right: 5%;
+  border-radius: 1rem;
+}
+
+.solutions-list__item:last-child {
+  margin-right: 0;
+}
+
+.solutions-list__item--heading {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 4.5rem 0;
+}
+
+.solutions-list__item--heading span {
+  font-size: 3.6rem;
+}
+
+.solutions-list__item--footer {
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  font-weight: bold;
+  margin: 1.6rem 0;
+}
+
+.solutions-list__item--footer span {
+  font-size: 2rem;
+}
+
+.solutions-list__item--content-col {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.solutions-list__item--content-col span {
+  margin-left: 1rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.solutions-list__item--content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fff;
+  margin: 0 0.4rem;
+  padding: 25px 25px 0 25px;
+  flex-grow: 1;
+}
+
+.solutions-list__item--content-price {
+  font-size: 6rem;
+  /* margin-top: 8.5rem; */
+  padding-bottom: 2rem;
+  text-align: center;
+}
+
+/* -------- End Solutions -------- */
+
+/* -------- Start Testimonials -------- */
+
+.testimonials {
+  height: 77rem;
+  background-image: url("./images/testimonials-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.testimonials-inner {
+}
+
+.testimonials-inner .heading {
+  padding-top: 3.5rem;
+  text-align: start;
+}
+
+.testimonial-content {
+  margin-top: 6rem;
+  width: 55rem;
+}
+
+.testimonials-author {
+  display: flex;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.testimonials-author__avatar {
+  margin-right: 3rem;
+}
+
+.testimonials-author__name--wrapper {
+  /* display: flex;
+  flex-direction: column; */
+}
+.testimonials-author__name {
+  text-align: start;
+  margin-bottom: 8px;
+}
+
+.testimonials-text {
+  text-align: start;
+}
+
+.testimonials-text p {
+  margin-bottom: 1rem;
+}
+
+.testimonials-next {
+  margin-top: 4rem;
+  text-align: end;
+}
+
+.testimonials-btn {
+  margin-top: 12rem;
+}
+
+/* -------- End Testimonials -------- */
+
+/* -------- Start Terms -------- */
+.terms {
+  margin-top: 9rem;
+  margin-bottom: 12rem;
+}
+
+.terms {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.terms-list {
+  display: flex;
+  margin-bottom: 7.5rem;
+}
+
+.terms-list__item {
+  width: 30%;
+  margin-right: 5%;
+}
+
+.terms-list__item--heading {
+  font-size: 3rem;
+  background-color: #ffd200;
+  padding: 2rem 0;
+  font-weight: bold;
+  text-align: center;
+  border-top-right-radius: 2rem;
+  border-top-left-radius: 2rem;
+}
+.terms-list__item--heading span {
+  font-size: 3.6rem;
+}
+
+.terms-list__item--content {
+  border-bottom-right-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+}
+
+.terms-list__item--content {
+  margin-top: 6px;
+  padding: 3rem 4rem;
+  background-color: #f7f0e6;
+  text-align: start;
+}
+
+.terms-list__item--content p {
+  margin-bottom: 1rem;
+}
+
+.terms-btn {
+  background-color: #e11a27;
+  color: #fff;
+}
+
+/* -------- End Terms -------- */
+
+/* -------- Start Footer -------- */
+.footer {
+  background-color: #ffd200;
+  padding: 5rem 0 6rem 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-content__left {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+}
+
+.footer-content__left--item {
+  border-top: 1px solid;
+  display: flex;
+  flex-direction: column;
+  padding-top: 3rem;
+  width: 30%;
+}
+
+.footer-content__left--item a {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  color: #000;
+  font-weight: bold;
+}
+
+.footer-content__right {
+  width: 20%;
+  border-top: 1px solid;
+  padding-top: 3rem;
+}
+
+.footer-content__right--social {
+  display: flex;
+}
+
+.footer-content__right--social img {
+  cursor: pointer;
+  margin-right: 2rem;
+}
+
+.footer-content__right--social img:last-child {
+  margin-right: 0;
+}
+
+.footer-content__right--a {
+  margin-top: 5rem;
+  padding: 14px;
+  border: 1px solid;
+  border-radius: 10px;
+}
+
+.footer-content__right--a span {
+  font-size: 11px;
+  margin-bottom: 15px;
+  display: inline-block;
+  font-weight: bold;
+}
+
+.footer-content__right--a {
+  display: inline-block;
+}
+
+/* -------- End Footer -------- */
