@@ -9,6 +9,13 @@
       href="http://fonts.cdnfonts.com/css/pf-agora-sans-pro-medium"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -55,50 +62,65 @@
     <div class="transaction">
       <div class="container transaction-inner">
         <div class="transaction-item">
-          <div class="transaction-item__wrapper">
-            <div class="transaction-item__img">
-              <img src="./images/transaction-1.png" alt="" />
-            </div>
+          <div class="transaction-item__circle">
             <img
-              src="./images//transaction-line.png"
+              src="./images/transaction-1.png"
               alt=""
-              class="transaction-underline"
+              class="transaction-item__img"
             />
           </div>
-          <div class="transaction-item__text title">Download photo</div>
+          <div class="transaction-item__text">Download photos</div>
+        </div>
+        <div class="transaction-item__underline">
+          <img
+            src="./images//transaction-line.png"
+            alt=""
+            class="transaction-underline"
+          />
         </div>
         <div class="transaction-item">
-          <div class="transaction-item__wrapper">
-            <div class="transaction-item__img">
-              <img src="./images/transaction-2.png" alt="" />
-            </div>
+          <div class="transaction-item__circle">
             <img
-              src="./images//transaction-line.png"
+              src="./images/transaction-2.png"
               alt=""
-              class="transaction-underline"
+              class="transaction-item__img"
             />
           </div>
+          <div class="transaction-item__text">Design your photobook</div>
+        </div>
+        <div class="transaction-item__underline">
+          <img
+            src="./images//transaction-line.png"
+            alt=""
+            class="transaction-underline"
+          />
         </div>
         <div class="transaction-item">
-          <div class="transaction-item__wrapper">
-            <div class="transaction-item__img">
-              <img src="./images/transaction-3.png" alt="" />
-            </div>
+          <div class="transaction-item__circle">
             <img
-              src="./images//transaction-line.png"
+              src="./images/transaction-3.png"
               alt=""
-              class="transaction-underline"
+              class="transaction-item__img"
             />
           </div>
-          <div class="transaction-item__text title">Pay for service</div>
+          <div class="transaction-item__text">Pay for service</div>
+        </div>
+        <div class="transaction-item__underline">
+          <img
+            src="./images//transaction-line.png"
+            alt=""
+            class="transaction-underline"
+          />
         </div>
         <div class="transaction-item">
-          <div class="transaction-item__wrapper">
-            <div class="transaction-item__img">
-              <img src="./images/transaction-4.png" alt="" />
-            </div>
+          <div class="transaction-item__circle">
+            <img
+              src="./images/transaction-4.png"
+              alt=""
+              class="transaction-item__img"
+            />
           </div>
-          <div class="transaction-item__text title">Get your photobook</div>
+          <div class="transaction-item__text">Get your photobook</div>
         </div>
       </div>
     </div>
@@ -181,6 +203,11 @@
             </div>
           </div>
           <div class="solutions-list__item">
+            <div class="solutions-list__bestseller">
+              <span class="solutions-list__bestseller--left"></span>
+              <span class="solutions-list__bestseller--main">Bestseller</span>
+              <span class="solutions-list__bestseller--right"></span>
+            </div>
             <div class="solutions-list__item--heading heading">
               <span>C</span>lassic<span>B</span>ook
             </div>
@@ -251,7 +278,9 @@
     <!-- -------- Start Testimonials -------- -->
     <div class="testimonials">
       <div class="container testimonials-inner">
-        <div class="heading"><span>T</span>estimonials</div>
+        <div class="testimonials-heading heading">
+          <span>T</span>estimonials
+        </div>
         <div class="testimonial-content">
           <div class="testimonials-author">
             <img
@@ -280,7 +309,9 @@
               anim id est laborum.
             </p>
           </div>
-          <div class="testimonials-next description">Next testimonial</div>
+          <div class="testimonials-next description">
+            Next testimonial &nbsp;<i class="fa-solid fa-arrow-right-long"></i>
+          </div>
         </div>
         <div class="testimonials-btn btn">Make your photobook</div>
       </div>
@@ -308,14 +339,13 @@
           <div class="terms-list__item">
             <div class="terms-list__item--heading"><span>P</span>ayment</div>
             <div class="terms-list__item--content description">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor.
-              </p>
-              <p>
-                Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla.
-              </p>
+              <p>Payment methods</p>
+              <ul>
+                <li>VISA</li>
+                <li>MasterCard</li>
+                <li>PayPal</li>
+                <li>American Express</li>
+              </ul>
             </div>
           </div>
           <div class="terms-list__item">
@@ -325,9 +355,8 @@
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                 eiusmod tempor.
               </p>
-              <p>
-                Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla.
+              <p class="text-red">
+                Pree shipping for <span>P</span>REMIUM<span>B</span>OOK
               </p>
             </div>
           </div>
@@ -375,7 +404,7 @@
           </div>
         </div>
         <div class="footer-copyright">
-          
+          © 2015 Photobook. All rights reserved
         </div>
       </div>
     </div>
